@@ -1,7 +1,10 @@
 use std::env;
 
+fn generate_key() -> u128 {
+    return rand();
+}
+
 fn encrypt(key: u128, string: String) -> String {
-    
 
     return output;
 }
@@ -31,6 +34,6 @@ fn main() {
     }
 
     if switches.contains('e') {
-        
+        println!(encrypt(key, string))
     }
 }
